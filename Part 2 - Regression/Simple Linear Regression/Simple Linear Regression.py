@@ -23,3 +23,4 @@ regressor = LinearRegression()
 regressor.fit(X_train, Y_train)
 
 # Predicting the Test set results
+Y_prediction = regressor.predict(X_test)
