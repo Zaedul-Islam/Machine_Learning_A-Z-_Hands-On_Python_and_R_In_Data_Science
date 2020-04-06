@@ -24,3 +24,7 @@ regressor.fit(X_train, Y_train)
 
 # Predicting the Test set results
 Y_prediction = regressor.predict(X_test)
+
+# Visualizing the Training set results
+plt.scatter(X_train, Y_train, color = 'red')
+
