@@ -36,5 +36,42 @@ regressor.fit(X_train, y_train)
 y_prediction = regressor.predict(X_test)
 
 # Building the optimal model using Backward Elimination
-import statsmodels.formula.api as sm
+import statsmodels.api as sm
+# Step 1
 X = np.append(arr = np.ones((50, 1)).astype(int), values = X, axis = 1)
+
+# Step 2
+X_optimal = X[:, [0, 1, 2, 3, 4, 5]]
+regressorOLS = sm.OLS(endog = y, exog = X_optimal).fit()
+
+# Step 3
+regressorOLS.summary()
+
+# Step 4: Fitting model without x2 independent variable (2nd dummy variable)
+X_optimal = X[:, [0, 1, 3, 4, 5]]
+regressorOLS = sm.OLS(endog = y, exog = X_optimal).fit()
+
+# Step 3
+regressorOLS.summary()
+
+# Step 4: Fitting model without x1 independent variable (1st dummy variable)
+X_optimal = X[:, [0, 3, 4, 5]]
+regressorOLS = sm.OLS(endog = y, exog = X_optimal).fit()
+
+# Step 3
+regressorOLS.summary()
+
+
+# Step 4: Fitting model without Administration independent variable (1st dummy variable)
+X_optimal = X[:, [0, 3, 5]]
+regressorOLS = sm.OLS(endog = y, exog = X_optimal).fit()
+
+# Step 3
+regressorOLS.summary()
+
+# Step 4: Fitting model without Marketing Spend independent variable (1st dummy variable)
+X_optimal = X[:, [0, 3]]
+regressorOLS = sm.OLS(endog = y, exog = X_optimal).fit()
+
+# Step 3
+regressorOLS.summary()
