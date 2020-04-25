@@ -27,3 +27,6 @@ X_test = standardScaler.transform(X_test)
 from sklearn.linear_model import LogisticRegression
 logisticRegressionClassifier = LogisticRegression(random_state = 0)
 logisticRegressionClassifier.fit(X_train, y_train)
+
+# Predicting the Test set result
+y_prediction = logisticRegressionClassifier.predict(X_test)
