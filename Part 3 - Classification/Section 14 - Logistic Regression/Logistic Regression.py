@@ -9,9 +9,9 @@ import pandas as pd
 filepath = './Dataset/Social Network Ads.csv'
 dataset = pd.read_csv(filepath)
 # Creating a matrix of independent variables
-X = dataset.iloc[:,[2,3]].values
+X = dataset.iloc[:, [2,3]].values
 # Creating dependent variable vector
-y = dataset.iloc[:,4].values
+y = dataset.iloc[:, 4].values
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
@@ -30,3 +30,7 @@ logisticRegressionClassifier.fit(X_train, y_train)
 
 # Predicting the Test set result
 y_prediction = logisticRegressionClassifier.predict(X_test)
+
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+confusionMatrix = confusion_matrix(y_test, y_prediction)
