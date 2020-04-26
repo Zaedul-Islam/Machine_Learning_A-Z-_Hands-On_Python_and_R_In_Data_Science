@@ -25,8 +25,12 @@ X_test = standardScaler.transform(X_test)
 
 # Fitting K-Nearest Neighbors to the Training set
 from sklearn.neighbors import KNeighborsClassifier
-knnClassifier = KNeighborsClassifier(n_neighbors = 5)
+knnClassifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
 knnClassifier.fit(X_train, y_train)
 
 # Predicting the Test set result
 y_prediction = knnClassifier.predict(X_test)
+ 
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+confusionMatrix = confusion_matrix(y_test, y_prediction)
