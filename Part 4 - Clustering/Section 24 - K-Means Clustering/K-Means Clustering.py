@@ -26,3 +26,11 @@ for i in range(1, 11): # In range, the upper bound is exclusive
       # inertia_ is another name WCSS
       wcss.append(kmeans.inertia_)
       
+# Plotting the Elbow Method graph
+plt.plot(range(1, 11), wcss)
+plt.title('The Elbow Method')
+plt.xlabel('Number of clusters')
+plt.ylabel('WCSS')
+plt.show()
+
+      
