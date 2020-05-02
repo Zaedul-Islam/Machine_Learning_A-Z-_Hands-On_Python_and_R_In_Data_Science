@@ -33,4 +33,8 @@ plt.xlabel('Number of clusters')
 plt.ylabel('WCSS')
 plt.show()
 
-      
+# Applying K-Means to the Mall Customers dataset
+kmeans = KMeans(n_clusters = 5, init = 'k-means++', max_iter = 300, n_init = 10, random_state = 0)
+# fit_predict method returns for each observation which cluster it belongs to. It will return
+# this cluster numbers into a single vector
+y_kmeans = kmeans.fit_predict(X)
