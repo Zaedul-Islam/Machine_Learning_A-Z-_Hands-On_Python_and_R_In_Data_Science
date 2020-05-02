@@ -1,0 +1,5 @@
+**Business Problem Description:** There is a big mall in a specific city that contains information of its clients. The clients are subscribed to the membership card. When the clients subscribe to the card, they provided their information (*Gender*, *Age*, *Annual Income*, *Spending Score*). Since they use it to buy all sorts of things in the mall, the mall has purchase history of each its client member. That's how they obtain the last column which is *Spending Score*. The *Spending Score* of a client is computed based on several criteria including their income, number of times per week day they show up in the mall, the amount of dollar they spend in a year. *Spending Score* takes value beteen 1 and 100. The more the value of *Spending Score*, the client spends more.
+
+**Mission:** Our mission is to segment their clients into different groups based on these two metrics *Annual Income* and *Spending Score*.
+
+**Hints:** Since we've no idea what the client segments might be or how many segments there would be, this is typically a clustering problem.
