@@ -53,6 +53,7 @@ plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 100, c = 'magenta', la
 # Plot the centroids
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroids')
 
+# Caveat - For clustering in more than two dimensions, the below code block will not work properly 
 plt.title('Clusters of clients') 
 plt.xlabel('Annual Income (k$)')
 plt.ylabel('Spending Score(1-100)')
