@@ -14,7 +14,7 @@ From the above Elbow Method chart, we can obtain the very obvious optimal number
 4. *Cluster 4* consists of clients who earn a low income but spend much. Therefore, can be called *Careless*.
 5. As opposed to the clients who have low income but spends much, *Cluster 5* can be labeled as *Sensible*.
 
-**After the proper labeling the cluster names, the Clusters of Clients chart will look like below:**
+**After proper labeling of the cluster names, the Clusters of Clients chart will look like below:**
 
 <img src="Visualization/Clusters of Clients_with_Labels.jpeg" width="600px">
 
