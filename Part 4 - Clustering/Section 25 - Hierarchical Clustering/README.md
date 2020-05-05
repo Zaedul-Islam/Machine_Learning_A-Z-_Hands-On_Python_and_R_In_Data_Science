@@ -1,6 +1,6 @@
-# Step by Step Guide to Agglomeratice Hierarchical Clustering
+# Step by Step Guide to Agglomerative Hierarchical Clustering
 
-<img src="Visualization/Agglomeratice Hierarchical Clustering.jpeg" width="600px">
+<img src="Visualization/Agglomerative Hierarchical Clustering.jpeg" width="600px">
 
 # Dendrogram
 
