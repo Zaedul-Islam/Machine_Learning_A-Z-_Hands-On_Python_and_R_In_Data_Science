@@ -5,7 +5,7 @@
 **Description of the tree:**
 At the bottom line that means x-axis, we have all our customers and the vertical line (i.e. y-axis) are the Eucleadian distances between the clusters. The dendrogram represents all the different clusters that were found during the Hierarchical Clustering process.
 
-# Dendrogram
+# Dendrogram with Cutting Point
 
 <img src="Visualization/Dendrogram with Cutting Point.jpeg" width="600px">
 
