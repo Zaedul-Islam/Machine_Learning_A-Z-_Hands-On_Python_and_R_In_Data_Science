@@ -14,7 +14,7 @@
 However, it's certainly needed to check the volume of the 2 clusters *Standard* and *Target*. Because, there's may be lot more customers in the *Standard* cluster which then would imply that the main revenue stream comes from the customers of *Cluster 3*. These are first insights we can get.
 
 
-4. *Cluster 4* consists of clients who earn a low income but spend much. Therefore, can be called *Careless* customers.
+4. *Cluster 4* consists of clients who earn a low income but spend much. Therefore, can be called *Careless* customers. They might be young people who first got their salary and are so excited about that they can't resist spending their whole monthly salary in the mall.
 5. As opposed to the clients who have low income but spends much, *Cluster 5* can be labeled as *Sensible*.
 
 **After proper labeling of the cluster names, the Clusters of Clients chart will look like below:**
