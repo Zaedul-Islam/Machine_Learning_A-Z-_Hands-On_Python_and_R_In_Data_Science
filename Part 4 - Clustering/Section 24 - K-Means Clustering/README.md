@@ -1,3 +1,6 @@
+# Step by Step Guide to K-Means Clustering
+<img src="Visualization/K-Means Clustering.jpeg" width="600px">
+
 # The Elbow Method graph
 <img src="Visualization/The Elbow Method.jpeg" width="600px">
 
