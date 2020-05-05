@@ -2,4 +2,4 @@
 
 **Mission:** Our mission is to segment their clients into different groups based on these two metrics *Annual Income* and *Spending Score*.
 
-**Hints:** Since we've no idea what the client segments might be or how many segments there would be, this is typically a clustering problem.
+**Hints:** Since we've no idea what the client segments might be or how many segments there would be and don't know the final categories ahead of time, this is typically a clustering problem. 
