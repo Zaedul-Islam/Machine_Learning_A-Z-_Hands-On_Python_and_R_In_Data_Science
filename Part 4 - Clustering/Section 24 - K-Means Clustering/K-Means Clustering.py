@@ -38,12 +38,16 @@ kmeans = KMeans(n_clusters = 5, init = 'k-means++', max_iter = 300, n_init = 10,
 y_kmeans = kmeans.fit_predict(X)
 
 # Visualizing the clusters
-# Cluster are numbered from 0 to 4
+# Clusters are numbered from 0 to 4
 # X[y_kmeans == 0, 0] - Plotting the x coordinates of all the observation points that belong to cluster 1
+# X[y_kmeans == 0, 1] - Plotting the y coordinates of all the observation points that belong to cluster 1
 # y_kmeans == 0 - Taking the cluster 1, 0 - Specifying the first column of dataset X
 # X[y_kmeans == 0, 1] - Plotting the y coordinates of all the observation points that belong to cluster 1
 # s - Size of a observation
 # c - Set the cluster color   
+
+# Caveat - For clustering in more than two dimensions, the below code block will not work properly 
+
 plt.scatter(X[y_kmeans == 0, 0], X[y_kmeans == 0, 1], s = 100, c = 'red', label = 'Careful')
 # Follow same thing for other 4 clusters
 plt.scatter(X[y_kmeans == 1, 0], X[y_kmeans == 1, 1], s = 100, c = 'blue', label = 'Standard')
@@ -54,7 +58,6 @@ plt.scatter(X[y_kmeans == 4, 0], X[y_kmeans == 4, 1], s = 100, c = 'magenta', la
 # Plot the centroids
 plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s = 300, c = 'yellow', label = 'Centroids')
 
-# Caveat - For clustering in more than two dimensions, the below code block will not work properly 
 plt.title('Clusters of clients') 
 plt.xlabel('Annual Income (k$)')
 plt.ylabel('Spending Score(1-100)')
