@@ -16,5 +16,5 @@ From the above Elbow Method chart, we can obtain the very obvious optimal number
 
 **After proper labeling of the cluster names, the Clusters of Clients chart will look like below:**
 
-<img src="Visualization/Clusters of Clients_with_Labels.jpeg" width="600px">
+<img src="Visualization/Clusters of Clients (with labels).jpeg" width="600px">
 
