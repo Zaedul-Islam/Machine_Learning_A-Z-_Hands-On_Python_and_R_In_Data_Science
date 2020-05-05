@@ -12,11 +12,14 @@ X = dataset.iloc[:,[3, 4]].values
 
 # Using the dendogram to find the optimal number of clusters
 import scipy.cluster.hierarchy as sch
-# linkage - is actually the algorithm itself of Hierarchical Clustering. 1st parameter (To which data we'll apply the linkage), 2nd parameter (Method that is used to find the clusters.)
-# 'ward' - It tries to minimize the variance within each cluster. Just like, in K-Means we're trying to minimize the WISS to plot the Elbow Method chart. This is almost same, the only difference is that instead of minimizing the WISS we're minimizing the within cluster variance. 
+# linkage - is actually the algorithm itself of Hierarchical Clustering. 1st parameter (To which data we'll apply the linkage), 
+# 2nd parameter (Method that is used to find the clusters.)
+# 'ward' - It tries to minimize the variance within each cluster. Just like, in K-Means we're trying to minimize the WISS to 
+# plot the Elbow Method chart. This is almost same, the only difference is that instead of minimizing the WISS we're minimizing 
+# the within cluster variance. 
 dendrogram = sch.dendrogram(sch.linkage(X, method = 'ward'))
 plt.title('Dendogram')
-plt.xlabel('Customers')
+plt.xlabel('Customers')   
 # The vertical lines in the dendromgram are the distances between the clusters that is between the centroids of the clusters 
 plt.ylabel('Euclidean Distances')
 plt.show()
