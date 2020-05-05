@@ -5,6 +5,9 @@
 **Description of the tree:**
 At the bottom line that means x-axis, we have all our customers and the vertical line (i.e. y-axis) are the Eucleadian distances between the clusters. The dendrogram represents all the different clusters that were found during the Hierarchical Clustering process.
 
+**Finding the optimal number of clusters:**
+From the dendrogram, the largest distance that we can make vertically without the crossing any horinzontal line is the *Blue* one. If we draw a horizontal line as in the image, we'll get 5 clusters. That's exactly the same results we obtained in K-Means with the Elbow Method for *Mall Customers* dataset.
+
 # Clusters of Clients
 
 <img src="Visualization/Clusters of Clients.jpeg" width="600px">
