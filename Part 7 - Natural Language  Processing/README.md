@@ -1,5 +1,5 @@
 ### Dataset Description
-The two columns of the dataset are **Review** and **Liked** respectively. <br/>
+The dataset contains 1000 reviews and the two columns of the dataset are **Review** and **Liked** respectively. <br/>
 **Review** - Review of a restaurent. <br/>
 **Liked** - This column can contain two values 1 or 0. 1 means that it's a positive review and 0 means a negative review. <br/>
 
