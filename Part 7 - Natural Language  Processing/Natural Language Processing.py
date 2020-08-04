@@ -22,7 +22,8 @@ dataset = pd.read_csv(filepath, delimiter = '\t', quoting = 3)
 import re
 import nltk
 
-# "stopwords" is a packacge (contains a list of words) which contains all the words that are generically irrelevant in a review or any text you know to predict the category in which to review or that text belongs
+# "stopwords" is a packacge (contains a list of words) which contains all the words that are generically irrelevant in a review or any text you know to predict 
+# the category in which to review or that text belongs
 nltk.download('stopwords')
 
 # Importing "stopwords" package
@@ -44,9 +45,16 @@ review = review.lower()
 # Split the "review" string into individual words
 review = review.split()
 
-# 4. Stemming - Only keeping the root of the different words to simplify the review even more. If we keep all the different versions of the same word that means the same thing. Well, the problem is that in the end in our process in our sparse matrix we'll have tons of words and therefore huge sparsity and therefore our algorithm will have trouble to run as we'll simply have too many columns. In the sparse matrix each word will have its own column. Example: "loved", "loving" come from the same root word "love"
+# 4. Stemming - Only keeping the root of the different words to simplify the review even more. If we keep all the different versions of the same word that 
+# means the same thing. Well, the problem is that in the end in our process in our sparse matrix we'll have tons of words and therefore huge sparsity and 
+# therefore our algorithm will have trouble to run as we'll simply have too many columns. In the sparse matrix each word will have its own column. 
+# Example: "loved", "loving" come from the same root word "love"
 # Creating an object of "PorterStemmer" class
 porterStemmer = PorterStemmer()
 
-# 5. Since "stopwords" is a package containing different lists of words in different languages. Here's the reviews are in English we need to make it easier for our program by telling it to only look at the English words and to specify this we need to explicitly mention it
+# 5. Since "stopwords" is a package containing different lists of words in different languages. Here's the reviews are in English we need to make it easier 
+# for our program by telling it to only look at the English words and to specify this we need to explicitly mention it
 review = [porterStemmer.stem(word) for word in review if not word in set(stopwords.words('english'))]
+
+# 6. Joining back different words of this review list separated by a space
+review = ' '.join(review)
