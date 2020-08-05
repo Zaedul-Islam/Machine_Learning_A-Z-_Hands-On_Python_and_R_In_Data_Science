@@ -62,5 +62,13 @@ for index in range(0, 1000):
       review = [porterStemmer.stem(word) for word in review if not word in set(stopwords.words('english'))]
       
       # 6. Joining back different words of this review list separated by a space
-      review = ' '.join(review)
+      review = ' '.join(review) 
       corpus.append(review)
+      
+      
+# Step 4 - Creating the Bag of Words model
+from sklearn.feature_extraction.text import CountVectorizer
+countVectorizer = CountVectorizer(max_features = 1500)
+X = countVectorizer.fit_transform(corpus).toarray()
+y = dataset.iloc[:, 1].values
+
