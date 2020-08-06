@@ -1,3 +1,11 @@
+### Business Problem Description
+The dataset contains the written reviews of restaurants. Our mission is to make some machine learning models that will predict if the review is positive or negative. This is simple for NLP. But the algorithm in this part will be very well applicable to other kinds of text even when the purpose is very different. We should be able to do the followings as well,
+1. Apply on books, for example, to predict the genre of a book (i.e., whether the book is a thriller/a comedy/a romance)
+2. Apply on HTML webpages to do whatever kind of analysis 
+3. Apply on newspaper to predict in which category an article belongs to <br/>
+
+We'll make a general model that you'll be able to apply to most of the texts.
+
 ### Dataset Description
 The dataset contains 1000 reviews and the two columns of the dataset are **Review** and **Liked** respectively. <br/>
 **Review** - Review of a restaurent. <br/>
