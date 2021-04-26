@@ -34,3 +34,6 @@ y_prediction = logisticRegressionClassifier.predict(X_test)
 # Making the Confusion Matrix
 from sklearn.metrics import confusion_matrix
 confusionMatrix = confusion_matrix(y_test, y_prediction)
+
+# Visualising the Training set results
+# from matplotlib.color import ListedColormap
